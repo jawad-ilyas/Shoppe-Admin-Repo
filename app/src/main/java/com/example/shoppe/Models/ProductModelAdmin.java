@@ -2,8 +2,8 @@ package com.example.shoppe.Models;
 
 public class ProductModelAdmin {
 
-    String productName , productDescription  , productPrice , productImage;
-
+    String productName , productDescription  , productPrice , productImage ;
+    int productQuantity;
     public ProductModelAdmin() {
 
     }
@@ -13,6 +13,12 @@ public class ProductModelAdmin {
         this.productDescription = productDescription;
         this.productPrice = productPrice;
         this.productImage = productImage;
+    }    public ProductModelAdmin(String productName, String productDescription, String productPrice, String productImage ,int productQuantity) {
+        this.productName = productName;
+        this.productDescription = productDescription;
+        this.productPrice = productPrice;
+        this.productImage = productImage;
+        this.productQuantity = productQuantity;
     }
 
     public String getProductName() {
@@ -41,6 +47,9 @@ public class ProductModelAdmin {
 
     public String getProductImage() {
         return productImage;
+    }
+    public int getProductQuantity() {
+        return productQuantity;
     }
 
     public void setProductImage(String productImage) {

@@ -71,7 +71,7 @@ public class ProductPageActivityAdmin extends AppCompatActivity {
                              public void onSuccess(Uri uri) {
                                  ProductModelAdmin productModelAdmin = new
                                          ProductModelAdmin(productName, productDescription ,
-                                         productPrice, uri.toString());
+                                         productPrice, uri.toString() ,1);
 
                                  FirebaseDatabase db = FirebaseDatabase.getInstance();
                                  DatabaseReference root = db.getReference().child("productsDetail/");

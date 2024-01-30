@@ -66,6 +66,7 @@
         style="@style/fieldsStyle"
         android:paddingVertical="12dp"
         android:id="@+id/productPrice"
+        android:inputType="number"
         android:background="@drawable/fileds_backgroudn"
         android:layout_height="wrap_content"/>
 
